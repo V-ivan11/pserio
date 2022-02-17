@@ -2,61 +2,114 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="build.css" rel="stylesheet">
-    <title>Perro Serio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="build.css" rel="stylesheet">
 </head>
 
-<body class="container flex flex-col flex-wrap">
+<body class="bg-black font-Montserrat">
+  <nav>
     <div class="flex">
-        <div class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg">
-            <div
-                class="relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 rounded-3xl hover:bg-green-600 hover:text-white hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer group">
-                <i class="material-icons">cloud</i>
-                <span
-                    class="absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-sm text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                    Proximamente...
-                </span>
-            </div>
-            <div
-                class="relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 rounded-3xl hover:bg-green-600 hover:text-white hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer group">
-                <i class="material-icons">rocket_launch</i>
-                <span
-                    class="absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-sm text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                    Proximamente...
-                </span>
-            </div>
-            <div
-                class="relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 rounded-3xl hover:bg-green-600 hover:text-white hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer group">
-                <i class="material-icons">leaderboard</i>
-                <span
-                    class="absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-sm text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                    Proximamente...
-                </span>
-            </div>
-            <div
-                class="relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 rounded-3xl hover:bg-green-600 hover:text-white hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer group">
-                <i class="material-icons">android</i>
-                <span
-                    class="absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-sm text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                    Proximamente...
-                </span>
-            </div>
-            <div
-                class="relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 rounded-3xl hover:bg-green-600 hover:text-white hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer group">
-                <i class="material-icons">fingerprint</i>
-                <span
-                    class="absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-sm text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                    Proximamente...
-                </span>
-            </div>
+      <div class="fixed right-0 flex flex-col-reverse w-16 h-screen m-0 text-white shadow-lg">
+        <div class="NavBar_Item group">
+          <i class="material-icons">cloud</i>
+          <span class="ItemIcon">
+            Proximamente...
+          </span>
         </div>
+        <div class="NavBar_Item group">
+          <i class="material-icons">rocket_launch</i>
+          <span class="ItemIcon">
+            Proximamente...
+          </span>
+        </div>
+        <div class="NavBar_Item group">
+          <i class="material-icons">leaderboard</i>
+          <span class="ItemIcon">
+            Proximamente...
+          </span>
+        </div>
+        <div class="NavBar_Item group">
+          <i class="material-icons">android</i>
+          <span class="ItemIcon">
+            Proximamente...
+          </span>
+        </div>
+        <div class="NavBar_Item group">
+          <i class="material-icons">fingerprint</i>
+          <span class="ItemIcon">
+            Proximamente...
+          </span>
+        </div>
+      </div>
     </div>
-    <div class="bg-cover bg-center h-screen"
-        style="background-image: url(https://i.pinimg.com/originals/4d/d5/c0/4dd5c0f2d5c75de5df9e97ca51455575.jpg)">
-    </div>
+  </nav>
+
+  <main>
+    <section id="home">
+      <div class="flex w-screen h-screen bg-left bg-cover lg:justify-end"
+        style="background-image: url(https://www.spacex.com/static/images/backgrounds/human_spaceflight_earth.jpg)">
+
+        <div class="flex flex-col justify-center h-screen p-10 space-y-5 xl:p-20 lg:w-1/2">
+
+          <p class="text-lg text-[#F65151]">SERIOUS</p>
+          <p class="text-5xl font-bold text-white xl:text-6xl">Like Walter</p>
+          <p class="text-xs text-white xl:text-xl">The whole world is looking to be serious.</p>
+
+          <button
+            class="w-20 h-auto p-2 text-sm font-semibold text-white transition duration-500 ease-in-out transform bg-black border-2 xl:text-xl hover:text-black hover:bg-white hover:-translate-y-1 hover:scale-110">
+            Explore
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="flex flex-wrap w-screen h-auto">
+        <div class="w-">
+
+        </div>
+      </div>
+      <div class="grid justify-center w-screen h-auto grid-cols-1 pl-20 pr-20 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+
+        <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-1.fna.fbcdn.net/v/t1.15752-9/252864096_265171845580182_7142387032956405087_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFC6_Wpxzcyr0UB6uho5FY_wI7-BEkjgyfAjv4ESSODJ3fsVXCLTZLsBJ6-qHwtKLcG_ou-f8bNIKbl14hSJHpV&_nc_ohc=eBVbKLC7tTwAX-t-ZQ8&_nc_ht=scontent.fmex2-1.fna&oh=03_AVKb2AWVA7lBMmiHZ_qNENJSOZz4C_NPu8o-xHtk_DrZew&oe=623246EC"
+          alt="belleza">
+        <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-1.fna.fbcdn.net/v/t1.15752-9/249009274_1848477182000989_5976428470635995104_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_aid=0&_nc_eui2=AeGMzRSeYnmP1jHCLYwUmN3I64i-BKOXb5zriL4Eo5dvnP1FmAmkCgOEII_VVKyjtEFFvY49piL3Jb1CCUHjfGHw&_nc_ohc=6VDpaTH7MuQAX998Zn0&_nc_ht=scontent.fmex2-1.fna&oh=03_AVLxmzYHIIUpsNop3-uz9q8E7ADgWs-8-uzMdtWqzoUDpA&oe=6234580A"
+          alt="reptil">
+        <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-1.fna.fbcdn.net/v/t1.15752-9/249376179_613427266512303_2734536194253756712_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeH8iXHdFvEB2iXAE4VAynBPxNaRE2EkU3DE1pETYSRTcF7FJwnRODbP3L31sMXG2okOuP8jmVWfmdFKXdOkEVHa&_nc_ohc=dBXFpdP0xF0AX_hohyB&_nc_ht=scontent.fmex2-1.fna&oh=03_AVIzxuRT-CkcCXgZIU4Mk3dVEJGXJkMGG5awjMgGt9AUgA&oe=62354FA3"
+          alt="huron">
+        <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-2.fna.fbcdn.net/v/t1.15752-9/247419498_673135394074811_2931146900277540152_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGpc_TnEKIS5DOidQp0AQ3-PeUQT1f5hlc95RBPV_mGV822Kf9_h7YoCEnm0X7ukSA8T5NMC77dynoooKLAb7a_&_nc_ohc=s2-mxOYFyP0AX9eamBA&_nc_ht=scontent.fmex2-2.fna&oh=03_AVKoJKCBYxN84HQf2y6rM8H-rxM0yh3NcjoWIRz9x4mUDg&oe=62349731"
+          alt="pelicano">
+          <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-1.fna.fbcdn.net/v/t1.15752-9/249376179_613427266512303_2734536194253756712_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeH8iXHdFvEB2iXAE4VAynBPxNaRE2EkU3DE1pETYSRTcF7FJwnRODbP3L31sMXG2okOuP8jmVWfmdFKXdOkEVHa&_nc_ohc=dBXFpdP0xF0AX_hohyB&_nc_ht=scontent.fmex2-1.fna&oh=03_AVIzxuRT-CkcCXgZIU4Mk3dVEJGXJkMGG5awjMgGt9AUgA&oe=62354FA3"
+          alt="huron">
+        <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-2.fna.fbcdn.net/v/t1.15752-9/247419498_673135394074811_2931146900277540152_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGpc_TnEKIS5DOidQp0AQ3-PeUQT1f5hlc95RBPV_mGV822Kf9_h7YoCEnm0X7ukSA8T5NMC77dynoooKLAb7a_&_nc_ohc=s2-mxOYFyP0AX9eamBA&_nc_ht=scontent.fmex2-2.fna&oh=03_AVKoJKCBYxN84HQf2y6rM8H-rxM0yh3NcjoWIRz9x4mUDg&oe=62349731"
+          alt="pelicano">
+          <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-1.fna.fbcdn.net/v/t1.15752-9/252864096_265171845580182_7142387032956405087_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFC6_Wpxzcyr0UB6uho5FY_wI7-BEkjgyfAjv4ESSODJ3fsVXCLTZLsBJ6-qHwtKLcG_ou-f8bNIKbl14hSJHpV&_nc_ohc=eBVbKLC7tTwAX-t-ZQ8&_nc_ht=scontent.fmex2-1.fna&oh=03_AVKb2AWVA7lBMmiHZ_qNENJSOZz4C_NPu8o-xHtk_DrZew&oe=623246EC"
+          alt="belleza">
+        <img class="object-scale-down basis-1/3 aspect-auto"
+          src="https://scontent.fmex2-1.fna.fbcdn.net/v/t1.15752-9/249009274_1848477182000989_5976428470635995104_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_aid=0&_nc_eui2=AeGMzRSeYnmP1jHCLYwUmN3I64i-BKOXb5zriL4Eo5dvnP1FmAmkCgOEII_VVKyjtEFFvY49piL3Jb1CCUHjfGHw&_nc_ohc=6VDpaTH7MuQAX998Zn0&_nc_ht=scontent.fmex2-1.fna&oh=03_AVLxmzYHIIUpsNop3-uz9q8E7ADgWs-8-uzMdtWqzoUDpA&oe=6234580A"
+          alt="reptil">
+
+      </div>
+
+
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+
 </body>
 
 </html>
